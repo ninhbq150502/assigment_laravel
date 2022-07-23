@@ -20,6 +20,7 @@ return new class extends Migration
             $table->string('custom_address');
             $table->string('custom_phone_number');
             $table->date('order_date');
+            $table->string('promo_code');
             $table->integer('status');
             $table->timestamps();
         });
