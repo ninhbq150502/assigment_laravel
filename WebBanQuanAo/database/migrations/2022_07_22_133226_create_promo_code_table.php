@@ -18,7 +18,7 @@ return new class extends Migration
             $table->string('name');
             $table->string('code');
             $table->integer('number_use');
-            $table->integer('status');
+            $table->integer('status')->default(1);
             $table->timestamps();
         });
     }

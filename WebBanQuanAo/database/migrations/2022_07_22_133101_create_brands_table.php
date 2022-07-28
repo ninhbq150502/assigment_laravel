@@ -17,6 +17,7 @@ return new class extends Migration
             $table->id();
             $table->string('brand_name');
             $table->string('avatar')->nullable();
+            $table->integer('status')->default(1);
             
             $table->timestamps();
         });
